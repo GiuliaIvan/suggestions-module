@@ -1,0 +1,94 @@
+.container {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar {
+  position: relative;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Size variants */
+.sizeSm {
+  --avatar-dimension: var(--avatar-size-sm);
+}
+
+.sizeMd {
+  --avatar-dimension: var(--avatar-size-md);
+}
+
+.sizeLg {
+  --avatar-dimension: var(--avatar-size-lg);
+}
+
+.avatar {
+  width: var(--avatar-dimension, var(--avatar-size-lg));
+  height: var(--avatar-dimension, var(--avatar-size-lg));
+}
+
+/* Type variants */
+.person {
+  background-color: var(--color-avatar-surface);
+}
+
+.merchant {
+  background-color: #fff3cd;
+}
+
+/* Image */
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Initials */
+.initials {
+  font-family: var(--font-family-rounded);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-avatar-text);
+  font-size: calc(var(--avatar-dimension, var(--avatar-size-lg)) * 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.39px;
+  line-height: 1;
+}
+
+.merchant .initials {
+  color: #b8860b;
+}
+
+/* Border overlay */
+.border {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-full);
+  border: 0.33px solid var(--color-fill-primary);
+  pointer-events: none;
+}
+
+/* Pin badge */
+.pinBadge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--color-tint-primary);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-background-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+}
+
+.pinBadge svg {
+  width: 10px;
+  height: 10px;
+}
+

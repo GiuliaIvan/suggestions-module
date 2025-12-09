@@ -1,0 +1,108 @@
+/* Vipps MobilePay Design Tokens - Extracted from Figma */
+
+:root {
+  /* Primary Colors */
+  --color-tint-primary: #ff5b24;
+  --color-tint-secondary: #5e3dc2;
+  
+  /* Background Colors */
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f2f2f7;
+  --color-surface-primary: #f7f7f7;
+  
+  /* Avatar Colors */
+  --color-avatar-surface: #ffe5db;
+  --color-avatar-text: #ff5b24;
+  
+  /* Label Colors */
+  --color-label-primary: #000000;
+  --color-label-secondary: #8e8e93;
+  --color-label-tertiary: #c7c7cc;
+  
+  /* Semantic Colors */
+  --color-success: #34c759;
+  --color-warning: #ff9500;
+  --color-error: #ff3b30;
+  --color-info: #007aff;
+  
+  /* Fill Colors */
+  --color-fill-primary: rgba(118, 118, 128, 0.12);
+  --color-fill-secondary: rgba(118, 118, 128, 0.08);
+  
+  /* Spacing */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* Border Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+  
+  /* Avatar Sizes */
+  --avatar-size-sm: 40px;
+  --avatar-size-md: 48px;
+  --avatar-size-lg: 56px;
+  
+  /* Typography */
+  --font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-rounded: 'SF Pro Rounded', var(--font-family);
+  
+  --font-size-xs: 11px;
+  --font-size-sm: 13px;
+  --font-size-md: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 17px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 22px;
+  
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --line-height-tight: 1.1;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.6;
+  
+  --letter-spacing-tight: -0.45px;
+  --letter-spacing-normal: -0.15px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-action-sheet: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-out;
+  --transition-normal: 250ms ease-out;
+  --transition-slow: 350ms ease-in-out;
+  
+  /* Z-index layers */
+  --z-base: 0;
+  --z-elevated: 10;
+  --z-overlay: 100;
+  --z-modal: 200;
+  --z-toast: 300;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background-primary: #000000;
+    --color-background-secondary: #1c1c1e;
+    --color-surface-primary: #2c2c2e;
+    --color-label-primary: #ffffff;
+    --color-label-secondary: #98989d;
+    --color-fill-primary: rgba(118, 118, 128, 0.24);
+    --color-fill-secondary: rgba(118, 118, 128, 0.18);
+  }
+}
+

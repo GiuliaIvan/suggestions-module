@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+}
+
+.emptyState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.emptyText {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-md);
+  color: var(--color-label-secondary);
+  text-align: center;
+}
+
